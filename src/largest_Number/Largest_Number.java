@@ -31,16 +31,16 @@ public class Largest_Number {
 	
 		Arrays.sort(array,new Comparator<String>()
 		{
-			public int compare(String o1, String o2) {
-				String s1=o1+o2;
+			public int compare(String o1, String o2) {		// Comparing 2 numbers
+				String s1=o1+o2;				// concatenating 2 string
 				String s2=o2+o1;
 				int n1=Integer.parseInt(s1);
 				int n2=Integer.parseInt(s2);
-				if(n1>n2)
+				if(n1>n2)					// checking if n1>n2, then no swap in elements
 				{
 					return -1;
 				}
-				else if(n1<n2)
+				else if(n1<n2)					// else swap
 				{
 					return 1;
 				}
